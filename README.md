@@ -14,7 +14,7 @@ Download and Install xampp or wampserver
 
 `sudo /opt/lampp/lampp start`
 
-## Install composer 
+Install composer and setup mysqli in linux
 
 ## Linux debian distro
 
