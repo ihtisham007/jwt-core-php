@@ -22,11 +22,6 @@ $authHeader = $_SERVER['HTTP_AUTHORIZATION'];
 
 $arr = explode(" ", $authHeader);
 
-
-/*echo json_encode(array(
-    "message" => "sd" .$arr[1]
-));*/
-
 $jwt = $arr[1];
 
 if($jwt){
@@ -37,7 +32,6 @@ if($jwt){
 
         echo json_encode(array(
             "message" => "Access granted: ".$jwt,
-            "error" => $e->getMessage()
         ));
  
     }catch (Exception $e){
