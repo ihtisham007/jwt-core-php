@@ -1,25 +1,34 @@
-# PHP JWT Authentication Example
+# Core PHP JWT Authentication
 
-This is a simple example application that implements JWT Authentication. It exposes three endpoints
+## Api Routes for sign-up and sign-in also protected route 
 
 - `api/login.php`
 - `api/register.php`
 - `api/protected.php`
 
-For detailed steps check out this [tutorial](https://www.techiediaries.com/php-jwt-authentication-tutorial/).
+## Steps To This App
 
-## How to Run This App
+Download and Install xampp or wampserver 
 
-First clone the repo:
+## Linux
+
+`sudo /opt/lampp/lampp start`
+
+## Install composer 
+
+## Linux debian distro
+
+`sudo apt-get install composer`
+
+## Clone this repo:
 
 ```bash
-$ git clone https://github.com/techiediaries/php-jwt-authentication-example.git
+$ git clone https://github.com/ihtisham007/jwt-core-php.git
 ```
-
-Next, navigate inside the project's folder and run the following command to start the server:
+## Next commands
 
 ```bash
-$ cd php-jwt-authentication-example
+$ cd jwt-core-php
 $ composer install
 $ php -S 127.0.0.1:8000
 ```
