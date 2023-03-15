@@ -10,10 +10,7 @@ RUN docker-php-ext-install mysqli
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Copy the composer.json and composer.lock files into the container
-COPY composer.json ./
-
-COPY . ./
+COPY . .
 
 # Install the dependencies using Composer
 RUN composer install --no-dev --prefer-dist --no-scripts --no-progress --no-interaction

@@ -14,7 +14,6 @@ class DatabaseService {
    //creating mysqli new conenction hostName, Database User Name, Database Password and Database 
    $this->conn= new mysqli($this->db_host,$this->db_user,$this->db_password,$this->db_name);
    if($this->conn){
-      echo "connected ";
    }else{
       echo "not connected";
    }
